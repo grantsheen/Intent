@@ -62,5 +62,22 @@ class MessagesViewController: MSMessagesAppViewController {
     
         // Use this method to finalize any behaviors associated with the change in presentation style.
     }
+    
+    
+    @IBOutlet weak var intentionsTextView: UITextView!
+    
+    @IBAction func saveButtonPressed(_ sender: UIButton) {
+        let intentions = intentionsTextView.text!
+        if intentions == "" { return }
+        print("text is ", intentions)
+        
+        let storyboard = UIStoryboard(name: "MainInterface", bundle: nil)
+        let intentionsSetVC = storyboard.instantiateViewController(withIdentifier: "intentionsSetController") as! IntentionsSetController
+        intentionsSetVC.intentions = intentions
+        present(intentionsSetVC, animated: true, completion: nil)
+    }
+    
+    
+    
 
 }

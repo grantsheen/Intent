@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3295C8827D0A48200981D0B /* IntentionsSetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3295C8727D0A48200981D0B /* IntentionsSetController.swift */; };
 		F33C57BC27CF4AEB00BD3445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33C57BB27CF4AEB00BD3445 /* Assets.xcassets */; };
 		F33C57C227CF4AEB00BD3445 /* Intent MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F33C57C127CF4AEB00BD3445 /* Intent MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F33C57C727CF4AEB00BD3445 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33C57C627CF4AEB00BD3445 /* Messages.framework */; };
@@ -40,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F3295C8727D0A48200981D0B /* IntentionsSetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentionsSetController.swift; sourceTree = "<group>"; };
 		F33C57B827CF4AE900BD3445 /* Intent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33C57BB27CF4AEB00BD3445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33C57C127CF4AEB00BD3445 /* Intent MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Intent MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3295C8427D0A23800981D0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3295C8527D0A23D00981D0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F33C57CB27CF4AEB00BD3445 /* MainInterface.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3295C8627D0A24300981D0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F33C57C927CF4AEB00BD3445 /* MessagesViewController.swift */,
+				F3295C8727D0A48200981D0B /* IntentionsSetController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F33C57B127CF4AE900BD3445 = {
 			isa = PBXGroup;
 			children = (
@@ -100,8 +126,9 @@
 		F33C57C827CF4AEB00BD3445 /* Intent MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
-				F33C57C927CF4AEB00BD3445 /* MessagesViewController.swift */,
-				F33C57CB27CF4AEB00BD3445 /* MainInterface.storyboard */,
+				F3295C8427D0A23800981D0B /* Model */,
+				F3295C8527D0A23D00981D0B /* View */,
+				F3295C8627D0A24300981D0B /* Controller */,
 				F33C57CE27CF4AEB00BD3445 /* Assets.xcassets */,
 				F33C57D027CF4AEB00BD3445 /* Info.plist */,
 			);
@@ -208,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F33C57CA27CF4AEB00BD3445 /* MessagesViewController.swift in Sources */,
+				F3295C8827D0A48200981D0B /* IntentionsSetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
