@@ -9,4 +9,4 @@ It is hard to hold yourself accountable to your goals, but it is easier and more
 ## Solution
 Intent, an iMessage extension that allows groups of friends to easily share and update each other on daily intentions. 
 
-Demo Video: https://www.youtube.com/watch?v=VlV3iB7CsO8&ab_channel=JoshMitchell
+Demo Video: youtube.com/watch?v=QEJLazUPZaQ&ab_channel=GrantSheen
